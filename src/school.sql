@@ -1,53 +1,91 @@
-INSERT INTO school (name, city_id, admin_id, score)
-VALUES ('Central Institute', 1, 1, 0);
+-- Can be inserted after Admin and City tables
 
-INSERT INTO school (name, city_id, admin_id, score)
-VALUES ('Desert Winds School for Boys', 1, 1, 0);
+INSERT INTO school (name, city_id, admin_id)
+VALUES ('Central Institute',
+(SELECT id FROM city WHERE name = 'Los Angeles'),
+(SELECT id FROM admin WHERE first_name = 'Adam' AND second_name = 'Smith'));
 
-INSERT INTO school (name, city_id, admin_id, score)
-VALUES ('Littlewood Charter School', 1, 1, 0);
+INSERT INTO school (name, city_id, admin_id)
+VALUES ('Desert Winds School for Boys',
+(SELECT id FROM city WHERE name = 'Los Angeles'),
+(SELECT id FROM admin WHERE first_name = 'Adam' AND second_name = 'Smith'));
 
-INSERT INTO school (name, city_id, admin_id, score)
-VALUES ('Lakewood Secondary School', 1, 1, 0);
+INSERT INTO school (name, city_id, admin_id)
+VALUES ('Littlewood Charter School',
+(SELECT id FROM city WHERE name = 'Los Angeles'),
+(SELECT id FROM admin WHERE first_name = 'Adam' AND second_name = 'Smith'));
 
-INSERT INTO school (name, city_id, admin_id, score)
-VALUES ('Golden Oak School for Boys', 1, 1, 0);
+INSERT INTO school (name, city_id, admin_id)
+VALUES ('Lakewood Secondary School',
+(SELECT id FROM city WHERE name = 'Los Angeles'),
+(SELECT id FROM admin WHERE first_name = 'Adam' AND second_name = 'Smith'));
 
-INSERT INTO school (name, city_id, admin_id, score)
-VALUES ('Rainbow High', 1, 1, 0);
+INSERT INTO school (name, city_id, admin_id)
+VALUES ('Golden Oak School for Boys',
+(SELECT id FROM city WHERE name = 'Los Angeles'),
+(SELECT id FROM admin WHERE first_name = 'Adam' AND second_name = 'Smith'));
 
-INSERT INTO school (name, city_id, admin_id, score)
-VALUES ('Pleasant Valley Elementary', 1, 1, 0);
+INSERT INTO school (name, city_id, admin_id)
+VALUES ('Rainbow High',
+(SELECT id FROM city WHERE name = 'Los Angeles'),
+(SELECT id FROM admin WHERE first_name = 'Adam' AND second_name = 'Smith'));
 
-INSERT INTO school (name, city_id, admin_id, score)
-VALUES ('Paradise School', 1, 1, 0);
+INSERT INTO school (name, city_id, admin_id)
+VALUES ('Pleasant Valley Elementary',
+(SELECT id FROM city WHERE name = 'Los Angeles'),
+(SELECT id FROM admin WHERE first_name = 'Adam' AND second_name = 'Smith'));
 
-INSERT INTO school (name, city_id, admin_id, score)
-VALUES ('Winterville Technical School', 1, 2, 0);
+INSERT INTO school (name, city_id, admin_id)
+VALUES ('Paradise School',
+(SELECT id FROM city WHERE name = 'Los Angeles'),
+(SELECT id FROM admin WHERE first_name = 'Adam' AND second_name = 'Smith'));
 
-INSERT INTO school (name, city_id, admin_id, score)
-VALUES ('Martin Luther King High', 1, 2, 0);
+INSERT INTO school (name, city_id, admin_id)
+VALUES ('Winterville Technical School',
+(SELECT id FROM city WHERE name = 'Tulsa'),
+(SELECT id FROM admin WHERE first_name = 'Michael' AND second_name = 'Jordan'));
 
-INSERT INTO school (name, city_id, admin_id, score)
-VALUES ('Granite Hills Elementary', 1, 2, 0);
+INSERT INTO school (name, city_id, admin_id)
+VALUES ('Martin Luther King High',
+(SELECT id FROM city WHERE name = 'Tulsa'),
+(SELECT id FROM admin WHERE first_name = 'Michael' AND second_name = 'Jordan'));
 
-INSERT INTO school (name, city_id, admin_id, score)
-VALUES ('River Fork Grammar School', 1, 2, 0);
+INSERT INTO school (name, city_id, admin_id)
+VALUES ('Granite Hills Elementary',
+(SELECT id FROM city WHERE name = 'Tulsa'),
+(SELECT id FROM admin WHERE first_name = 'Michael' AND second_name = 'Jordan'));
 
-INSERT INTO school (name, city_id, admin_id, score)
-VALUES ('Golden Valley Elementary', 1, 2, 0);
+INSERT INTO school (name, city_id, admin_id)
+VALUES ('River Fork Grammar School',
+(SELECT id FROM city WHERE name = 'Tulsa'),
+(SELECT id FROM admin WHERE first_name = 'Michael' AND second_name = 'Jordan'));
 
-INSERT INTO school (name, city_id, admin_id, score)
-VALUES ('Bayshore Kindergarten', 1, 2, 0);
+INSERT INTO school (name, city_id, admin_id)
+VALUES ('Golden Valley Elementary',
+(SELECT id FROM city WHERE name = 'Tulsa'),
+(SELECT id FROM admin WHERE first_name = 'Michael' AND second_name = 'Jordan'));
 
-INSERT INTO school (name, city_id, admin_id, score)
-VALUES ('Laguna Creek Academy', 1, 2, 0);
+INSERT INTO school (name, city_id, admin_id)
+VALUES ('Bayshore Kindergarten',
+(SELECT id FROM city WHERE name = 'Tulsa'),
+(SELECT id FROM admin WHERE first_name = 'Michael' AND second_name = 'Jordan'));
 
-INSERT INTO school (name, city_id, admin_id, score)
-VALUES ('Grapevine Conservatory', 1, 2, 0);
+INSERT INTO school (name, city_id, admin_id)
+VALUES ('Laguna Creek Academy',
+(SELECT id FROM city WHERE name = 'Tulsa'),
+(SELECT id FROM admin WHERE first_name = 'Michael' AND second_name = 'Jordan'));
 
-INSERT INTO school (name, city_id, admin_id, score)
-VALUES ('Elk Creek School for Girls', 1, 2, 0);
+INSERT INTO school (name, city_id, admin_id)
+VALUES ('Grapevine Conservatory',
+(SELECT id FROM city WHERE name = 'Tulsa'),
+(SELECT id FROM admin WHERE first_name = 'Michael' AND second_name = 'Jordan'));
 
-INSERT INTO school (name, city_id, admin_id, score)
-VALUES ('Hawking School for Girls', 1, 2, 0);
+INSERT INTO school (name, city_id, admin_id)
+VALUES ('Elk Creek School for Girls',
+(SELECT id FROM city WHERE name = 'Tulsa'),
+(SELECT id FROM admin WHERE first_name = 'Michael' AND second_name = 'Jordan'));
+
+INSERT INTO school (name, city_id, admin_id)
+VALUES ('Hawking School for Girls',
+(SELECT id FROM city WHERE name = 'Tulsa'),
+(SELECT id FROM admin WHERE first_name = 'Michael' AND second_name = 'Jordan'));

@@ -1,3 +1,5 @@
+-- Can be inserted at first insertion
+
 INSERT INTO city (name)
 VALUES ('Los Angeles');
 

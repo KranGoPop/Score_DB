@@ -1,3 +1,4 @@
+-- Can be insrted at first
 INSERT INTO event (score, name)
 VALUES (10, 'The steeper the mountain the harder');
 
